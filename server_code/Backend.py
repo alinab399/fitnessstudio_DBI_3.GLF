@@ -1,3 +1,5 @@
+# PK: fett und unterstrichen
+# FK: kursiv und (FK)
 import sqlite3
 import anvil.files
 from anvil.files import data_files
@@ -22,3 +24,5 @@ def get__by_id(id):
     cur = conn.cursor()
     result = cur.execute(query).fetchall()
   return [dict(row) for row in result]
+
+
