@@ -1,0 +1,33 @@
+components:
+- components:
+  - components:
+    - name: repeating_panel_kurse
+      properties: {item_template: Startseite.RowTemplate1}
+      type: RepeatingPanel
+    layout_properties: {grid_position: 'WTTDNK,DNWXHN'}
+    name: data_grid_kursuebersicht
+    properties:
+      columns:
+      - {data_key: Bezeichnung, expand: false, id: JKSDUP, title: Kurs, width: 159.242431640625}
+      - {data_key: Wochentage, id: VJQQOR, title: Wochentag}
+      - {data_key: Uhrzeit, id: OJLQEN, title: Uhrzeit}
+      - {data_key: Trainer, id: KQRJAV, title: Trainer}
+      - {data_key: Teilnehmer, id: AITEJN, title: Teilnehmer}
+      - {data_key: column_1, id: ZTAKSO, title: Anmelden}
+    type: DataGrid
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_1
+  properties: {text: Fitnessstudio}
+  type: Label
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
